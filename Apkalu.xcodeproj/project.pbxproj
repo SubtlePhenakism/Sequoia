@@ -7,13 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4623D1E71BD1A6EE00D8B85D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4623D1E61BD1A6EE00D8B85D /* SettingsViewController.swift */; };
 		4631BE3F1BB21FBE00CE6FAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4631BE3E1BB21FBE00CE6FAA /* AppDelegate.swift */; };
 		4631BE421BB21FBE00CE6FAA /* Apkalu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4631BE401BB21FBE00CE6FAA /* Apkalu.xcdatamodeld */; };
-		4631BE441BB21FBE00CE6FAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4631BE431BB21FBE00CE6FAA /* ViewController.swift */; };
+		4631BE441BB21FBE00CE6FAA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4631BE431BB21FBE00CE6FAA /* HomeViewController.swift */; };
 		4631BE471BB21FBE00CE6FAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4631BE451BB21FBE00CE6FAA /* Main.storyboard */; };
 		4631BE491BB21FBE00CE6FAA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4631BE481BB21FBE00CE6FAA /* Images.xcassets */; };
 		4631BE4C1BB21FBE00CE6FAA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4631BE4A1BB21FBE00CE6FAA /* LaunchScreen.xib */; };
 		4631BE581BB21FBE00CE6FAA /* ApkaluTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4631BE571BB21FBE00CE6FAA /* ApkaluTests.swift */; };
+		4631BE671BB2218800CE6FAA /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4631BE641BB2218800CE6FAA /* Bolts.framework */; };
+		4631BE681BB2218800CE6FAA /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4631BE651BB2218800CE6FAA /* Parse.framework */; };
+		4631BE691BB2218800CE6FAA /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4631BE661BB2218800CE6FAA /* ParseUI.framework */; };
+		4631BE761BB2227E00CE6FAA /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4631BE6A1BB2227E00CE6FAA /* Accounts.framework */; };
+		4631BE771BB2227E00CE6FAA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4631BE6B1BB2227E00CE6FAA /* AudioToolbox.framework */; };
+		4631BE781BB2227E00CE6FAA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4631BE6C1BB2227E00CE6FAA /* CFNetwork.framework */; };
+		4631BE791BB2227E00CE6FAA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4631BE6D1BB2227E00CE6FAA /* CoreGraphics.framework */; };
+		4631BE7A1BB2227E00CE6FAA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4631BE6E1BB2227E00CE6FAA /* CoreLocation.framework */; };
+		4631BE7B1BB2227E00CE6FAA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4631BE6F1BB2227E00CE6FAA /* libsqlite3.dylib */; };
+		4631BE7C1BB2227E00CE6FAA /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4631BE701BB2227E00CE6FAA /* libz.dylib */; };
+		4631BE7D1BB2227E00CE6FAA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4631BE711BB2227E00CE6FAA /* QuartzCore.framework */; };
+		4631BE7E1BB2227E00CE6FAA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4631BE721BB2227E00CE6FAA /* Security.framework */; };
+		4631BE7F1BB2227E00CE6FAA /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4631BE731BB2227E00CE6FAA /* Social.framework */; };
+		4631BE801BB2227E00CE6FAA /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4631BE741BB2227E00CE6FAA /* StoreKit.framework */; };
+		4631BE811BB2227E00CE6FAA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4631BE751BB2227E00CE6FAA /* SystemConfiguration.framework */; };
+		4631BE861BB2264500CE6FAA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4631BE851BB2264500CE6FAA /* LoginViewController.swift */; };
+		4631BE881BB2268700CE6FAA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4631BE871BB2268700CE6FAA /* SignUpViewController.swift */; };
+		4631BE8A1BB226CC00CE6FAA /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4631BE891BB226CC00CE6FAA /* ResetPasswordViewController.swift */; };
+		4631BE8C1BB227DB00CE6FAA /* AddAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4631BE8B1BB227DB00CE6FAA /* AddAddressViewController.swift */; };
+		467D39C61BE7F79400DA7BE0 /* ProfileImageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467D39C51BE7F79400DA7BE0 /* ProfileImageCollectionViewController.swift */; };
+		467D39C81BE7F9D600DA7BE0 /* ProfileImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467D39C71BE7F9D600DA7BE0 /* ProfileImageCell.swift */; };
+		467D39E51BED917E00DA7BE0 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467D39CA1BED917E00DA7BE0 /* BlurView.swift */; };
+		467D39E61BED917E00DA7BE0 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467D39CB1BED917E00DA7BE0 /* Data.swift */; };
+		467D39E71BED917E00DA7BE0 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467D39CC1BED917E00DA7BE0 /* DesignableButton.swift */; };
+		467D39E81BED917E00DA7BE0 /* DesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467D39CD1BED917E00DA7BE0 /* DesignableImageView.swift */; };
+		467D39E91BED917E00DA7BE0 /* DesignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467D39CE1BED917E00DA7BE0 /* DesignableLabel.swift */; };
+		467D39EA1BED917E00DA7BE0 /* DesignableTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467D39CF1BED917E00DA7BE0 /* DesignableTabBarController.swift */; };
+		467D39EB1BED917E00DA7BE0 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467D39D01BED917E00DA7BE0 /* DesignableTextField.swift */; };
+		467D39EC1BED917E00DA7BE0 /* DesignableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467D39D11BED917E00DA7BE0 /* DesignableTextView.swift */; };
+		467D39ED1BED917E00DA7BE0 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467D39D21BED917E00DA7BE0 /* DesignableView.swift */; };
+		467D39EE1BED917E00DA7BE0 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467D39D31BED917E00DA7BE0 /* ImageLoader.swift */; };
+		467D39EF1BED917E00DA7BE0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 467D39D41BED917E00DA7BE0 /* Info.plist */; };
+		467D39F01BED917E00DA7BE0 /* KeyboardAvoidingScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467D39D51BED917E00DA7BE0 /* KeyboardAvoidingScrollView.swift */; };
+		467D39F11BED917E00DA7BE0 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467D39D61BED917E00DA7BE0 /* LoadingView.swift */; };
+		467D39F21BED917E00DA7BE0 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 467D39D71BED917E00DA7BE0 /* LoadingView.xib */; };
+		467D39F31BED917E00DA7BE0 /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467D39D81BED917E00DA7BE0 /* Misc.swift */; };
+		467D39F41BED917E00DA7BE0 /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467D39DA1BED917E00DA7BE0 /* Spring.swift */; };
+		467D39F51BED917E00DA7BE0 /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467D39DB1BED917E00DA7BE0 /* SpringAnimation.swift */; };
+		467D39F61BED917E00DA7BE0 /* SpringButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467D39DC1BED917E00DA7BE0 /* SpringButton.swift */; };
+		467D39F71BED917E00DA7BE0 /* SpringImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467D39DD1BED917E00DA7BE0 /* SpringImageView.swift */; };
+		467D39F81BED917E00DA7BE0 /* SpringLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467D39DE1BED917E00DA7BE0 /* SpringLabel.swift */; };
+		467D39F91BED917E00DA7BE0 /* SpringTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467D39DF1BED917E00DA7BE0 /* SpringTextField.swift */; };
+		467D39FA1BED917E00DA7BE0 /* SpringTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467D39E01BED917E00DA7BE0 /* SpringTextView.swift */; };
+		467D39FB1BED917E00DA7BE0 /* SpringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467D39E11BED917E00DA7BE0 /* SpringView.swift */; };
+		467D39FC1BED917E00DA7BE0 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467D39E21BED917E00DA7BE0 /* TransitionManager.swift */; };
+		467D39FD1BED917E00DA7BE0 /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467D39E31BED917E00DA7BE0 /* TransitionZoom.swift */; };
+		467D39FE1BED917E00DA7BE0 /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467D39E41BED917E00DA7BE0 /* UnwindSegue.swift */; };
+		46EF68371BD4143D00AA52DF /* HomeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EF68361BD4143D00AA52DF /* HomeInfo.swift */; };
+		46FAF6671BFA9AAC004D573A /* RenterCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FAF6661BFA9AAC004D573A /* RenterCodeViewController.swift */; };
+		46FAF66B1BFD48EF004D573A /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FAF66A1BFD48EF004D573A /* MessageTableViewCell.swift */; };
+		46FAF66F1BFD536B004D573A /* MessageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FAF66E1BFD536B004D573A /* MessageInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,17 +79,71 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4623D1E61BD1A6EE00D8B85D /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		4631BE391BB21FBE00CE6FAA /* Apkalu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Apkalu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4631BE3D1BB21FBE00CE6FAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4631BE3E1BB21FBE00CE6FAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4631BE411BB21FBE00CE6FAA /* Apkalu.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Apkalu.xcdatamodel; sourceTree = "<group>"; };
-		4631BE431BB21FBE00CE6FAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4631BE431BB21FBE00CE6FAA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4631BE461BB21FBE00CE6FAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4631BE481BB21FBE00CE6FAA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4631BE4B1BB21FBE00CE6FAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4631BE511BB21FBE00CE6FAA /* ApkaluTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApkaluTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4631BE561BB21FBE00CE6FAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4631BE571BB21FBE00CE6FAA /* ApkaluTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApkaluTests.swift; sourceTree = "<group>"; };
+		4631BE641BB2218800CE6FAA /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		4631BE651BB2218800CE6FAA /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		4631BE661BB2218800CE6FAA /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		4631BE6A1BB2227E00CE6FAA /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		4631BE6B1BB2227E00CE6FAA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4631BE6C1BB2227E00CE6FAA /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		4631BE6D1BB2227E00CE6FAA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4631BE6E1BB2227E00CE6FAA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4631BE6F1BB2227E00CE6FAA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		4631BE701BB2227E00CE6FAA /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		4631BE711BB2227E00CE6FAA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4631BE721BB2227E00CE6FAA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		4631BE731BB2227E00CE6FAA /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		4631BE741BB2227E00CE6FAA /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		4631BE751BB2227E00CE6FAA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4631BE821BB222DA00CE6FAA /* Apkalu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Apkalu-Bridging-Header.h"; sourceTree = "<group>"; };
+		4631BE851BB2264500CE6FAA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4631BE871BB2268700CE6FAA /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		4631BE891BB226CC00CE6FAA /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		4631BE8B1BB227DB00CE6FAA /* AddAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAddressViewController.swift; sourceTree = "<group>"; };
+		467D39C51BE7F79400DA7BE0 /* ProfileImageCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileImageCollectionViewController.swift; sourceTree = "<group>"; };
+		467D39C71BE7F9D600DA7BE0 /* ProfileImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileImageCell.swift; sourceTree = "<group>"; };
+		467D39CA1BED917E00DA7BE0 /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		467D39CB1BED917E00DA7BE0 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		467D39CC1BED917E00DA7BE0 /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
+		467D39CD1BED917E00DA7BE0 /* DesignableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableImageView.swift; sourceTree = "<group>"; };
+		467D39CE1BED917E00DA7BE0 /* DesignableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableLabel.swift; sourceTree = "<group>"; };
+		467D39CF1BED917E00DA7BE0 /* DesignableTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTabBarController.swift; sourceTree = "<group>"; };
+		467D39D01BED917E00DA7BE0 /* DesignableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
+		467D39D11BED917E00DA7BE0 /* DesignableTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextView.swift; sourceTree = "<group>"; };
+		467D39D21BED917E00DA7BE0 /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		467D39D31BED917E00DA7BE0 /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		467D39D41BED917E00DA7BE0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		467D39D51BED917E00DA7BE0 /* KeyboardAvoidingScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardAvoidingScrollView.swift; sourceTree = "<group>"; };
+		467D39D61BED917E00DA7BE0 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		467D39D71BED917E00DA7BE0 /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		467D39D81BED917E00DA7BE0 /* Misc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Misc.swift; sourceTree = "<group>"; };
+		467D39D91BED917E00DA7BE0 /* Spring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spring.h; sourceTree = "<group>"; };
+		467D39DA1BED917E00DA7BE0 /* Spring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spring.swift; sourceTree = "<group>"; };
+		467D39DB1BED917E00DA7BE0 /* SpringAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringAnimation.swift; sourceTree = "<group>"; };
+		467D39DC1BED917E00DA7BE0 /* SpringButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringButton.swift; sourceTree = "<group>"; };
+		467D39DD1BED917E00DA7BE0 /* SpringImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringImageView.swift; sourceTree = "<group>"; };
+		467D39DE1BED917E00DA7BE0 /* SpringLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringLabel.swift; sourceTree = "<group>"; };
+		467D39DF1BED917E00DA7BE0 /* SpringTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringTextField.swift; sourceTree = "<group>"; };
+		467D39E01BED917E00DA7BE0 /* SpringTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringTextView.swift; sourceTree = "<group>"; };
+		467D39E11BED917E00DA7BE0 /* SpringView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringView.swift; sourceTree = "<group>"; };
+		467D39E21BED917E00DA7BE0 /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
+		467D39E31BED917E00DA7BE0 /* TransitionZoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionZoom.swift; sourceTree = "<group>"; };
+		467D39E41BED917E00DA7BE0 /* UnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
+		46EF68361BD4143D00AA52DF /* HomeInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInfo.swift; sourceTree = "<group>"; };
+		46FAF6661BFA9AAC004D573A /* RenterCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenterCodeViewController.swift; sourceTree = "<group>"; };
+		46FAF66A1BFD48EF004D573A /* MessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		46FAF66E1BFD536B004D573A /* MessageInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +151,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4631BE761BB2227E00CE6FAA /* Accounts.framework in Frameworks */,
+				4631BE771BB2227E00CE6FAA /* AudioToolbox.framework in Frameworks */,
+				4631BE781BB2227E00CE6FAA /* CFNetwork.framework in Frameworks */,
+				4631BE791BB2227E00CE6FAA /* CoreGraphics.framework in Frameworks */,
+				4631BE7A1BB2227E00CE6FAA /* CoreLocation.framework in Frameworks */,
+				4631BE7B1BB2227E00CE6FAA /* libsqlite3.dylib in Frameworks */,
+				4631BE7C1BB2227E00CE6FAA /* libz.dylib in Frameworks */,
+				4631BE7D1BB2227E00CE6FAA /* QuartzCore.framework in Frameworks */,
+				4631BE7E1BB2227E00CE6FAA /* Security.framework in Frameworks */,
+				4631BE7F1BB2227E00CE6FAA /* Social.framework in Frameworks */,
+				4631BE801BB2227E00CE6FAA /* StoreKit.framework in Frameworks */,
+				4631BE811BB2227E00CE6FAA /* SystemConfiguration.framework in Frameworks */,
+				4631BE691BB2218800CE6FAA /* ParseUI.framework in Frameworks */,
+				4631BE681BB2218800CE6FAA /* Parse.framework in Frameworks */,
+				4631BE671BB2218800CE6FAA /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +185,7 @@
 				4631BE3B1BB21FBE00CE6FAA /* Apkalu */,
 				4631BE541BB21FBE00CE6FAA /* ApkaluTests */,
 				4631BE3A1BB21FBE00CE6FAA /* Products */,
+				4631BE631BB2217000CE6FAA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,13 +201,26 @@
 		4631BE3B1BB21FBE00CE6FAA /* Apkalu */ = {
 			isa = PBXGroup;
 			children = (
+				467D39C91BED917E00DA7BE0 /* Spring */,
 				4631BE3E1BB21FBE00CE6FAA /* AppDelegate.swift */,
-				4631BE431BB21FBE00CE6FAA /* ViewController.swift */,
+				4631BE431BB21FBE00CE6FAA /* HomeViewController.swift */,
+				46FAF66A1BFD48EF004D573A /* MessageTableViewCell.swift */,
+				46EF68361BD4143D00AA52DF /* HomeInfo.swift */,
+				46FAF66E1BFD536B004D573A /* MessageInfo.swift */,
+				4623D1E61BD1A6EE00D8B85D /* SettingsViewController.swift */,
+				467D39C51BE7F79400DA7BE0 /* ProfileImageCollectionViewController.swift */,
+				467D39C71BE7F9D600DA7BE0 /* ProfileImageCell.swift */,
+				4631BE851BB2264500CE6FAA /* LoginViewController.swift */,
+				4631BE871BB2268700CE6FAA /* SignUpViewController.swift */,
+				4631BE8B1BB227DB00CE6FAA /* AddAddressViewController.swift */,
+				46FAF6661BFA9AAC004D573A /* RenterCodeViewController.swift */,
+				4631BE891BB226CC00CE6FAA /* ResetPasswordViewController.swift */,
 				4631BE451BB21FBE00CE6FAA /* Main.storyboard */,
 				4631BE481BB21FBE00CE6FAA /* Images.xcassets */,
 				4631BE4A1BB21FBE00CE6FAA /* LaunchScreen.xib */,
 				4631BE401BB21FBE00CE6FAA /* Apkalu.xcdatamodeld */,
 				4631BE3C1BB21FBE00CE6FAA /* Supporting Files */,
+				4631BE821BB222DA00CE6FAA /* Apkalu-Bridging-Header.h */,
 			);
 			path = Apkalu;
 			sourceTree = "<group>";
@@ -113,6 +248,63 @@
 				4631BE561BB21FBE00CE6FAA /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4631BE631BB2217000CE6FAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4631BE6A1BB2227E00CE6FAA /* Accounts.framework */,
+				4631BE6B1BB2227E00CE6FAA /* AudioToolbox.framework */,
+				4631BE6C1BB2227E00CE6FAA /* CFNetwork.framework */,
+				4631BE6D1BB2227E00CE6FAA /* CoreGraphics.framework */,
+				4631BE6E1BB2227E00CE6FAA /* CoreLocation.framework */,
+				4631BE6F1BB2227E00CE6FAA /* libsqlite3.dylib */,
+				4631BE701BB2227E00CE6FAA /* libz.dylib */,
+				4631BE711BB2227E00CE6FAA /* QuartzCore.framework */,
+				4631BE721BB2227E00CE6FAA /* Security.framework */,
+				4631BE731BB2227E00CE6FAA /* Social.framework */,
+				4631BE741BB2227E00CE6FAA /* StoreKit.framework */,
+				4631BE751BB2227E00CE6FAA /* SystemConfiguration.framework */,
+				4631BE641BB2218800CE6FAA /* Bolts.framework */,
+				4631BE651BB2218800CE6FAA /* Parse.framework */,
+				4631BE661BB2218800CE6FAA /* ParseUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		467D39C91BED917E00DA7BE0 /* Spring */ = {
+			isa = PBXGroup;
+			children = (
+				467D39CA1BED917E00DA7BE0 /* BlurView.swift */,
+				467D39CB1BED917E00DA7BE0 /* Data.swift */,
+				467D39CC1BED917E00DA7BE0 /* DesignableButton.swift */,
+				467D39CD1BED917E00DA7BE0 /* DesignableImageView.swift */,
+				467D39CE1BED917E00DA7BE0 /* DesignableLabel.swift */,
+				467D39CF1BED917E00DA7BE0 /* DesignableTabBarController.swift */,
+				467D39D01BED917E00DA7BE0 /* DesignableTextField.swift */,
+				467D39D11BED917E00DA7BE0 /* DesignableTextView.swift */,
+				467D39D21BED917E00DA7BE0 /* DesignableView.swift */,
+				467D39D31BED917E00DA7BE0 /* ImageLoader.swift */,
+				467D39D41BED917E00DA7BE0 /* Info.plist */,
+				467D39D51BED917E00DA7BE0 /* KeyboardAvoidingScrollView.swift */,
+				467D39D61BED917E00DA7BE0 /* LoadingView.swift */,
+				467D39D71BED917E00DA7BE0 /* LoadingView.xib */,
+				467D39D81BED917E00DA7BE0 /* Misc.swift */,
+				467D39D91BED917E00DA7BE0 /* Spring.h */,
+				467D39DA1BED917E00DA7BE0 /* Spring.swift */,
+				467D39DB1BED917E00DA7BE0 /* SpringAnimation.swift */,
+				467D39DC1BED917E00DA7BE0 /* SpringButton.swift */,
+				467D39DD1BED917E00DA7BE0 /* SpringImageView.swift */,
+				467D39DE1BED917E00DA7BE0 /* SpringLabel.swift */,
+				467D39DF1BED917E00DA7BE0 /* SpringTextField.swift */,
+				467D39E01BED917E00DA7BE0 /* SpringTextView.swift */,
+				467D39E11BED917E00DA7BE0 /* SpringView.swift */,
+				467D39E21BED917E00DA7BE0 /* TransitionManager.swift */,
+				467D39E31BED917E00DA7BE0 /* TransitionZoom.swift */,
+				467D39E41BED917E00DA7BE0 /* UnwindSegue.swift */,
+			);
+			name = Spring;
+			path = ../../Spring;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,9 +387,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				467D39EF1BED917E00DA7BE0 /* Info.plist in Resources */,
 				4631BE471BB21FBE00CE6FAA /* Main.storyboard in Resources */,
 				4631BE4C1BB21FBE00CE6FAA /* LaunchScreen.xib in Resources */,
 				4631BE491BB21FBE00CE6FAA /* Images.xcassets in Resources */,
+				467D39F21BED917E00DA7BE0 /* LoadingView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,9 +409,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4631BE441BB21FBE00CE6FAA /* ViewController.swift in Sources */,
+				46EF68371BD4143D00AA52DF /* HomeInfo.swift in Sources */,
+				467D39F41BED917E00DA7BE0 /* Spring.swift in Sources */,
+				467D39EB1BED917E00DA7BE0 /* DesignableTextField.swift in Sources */,
+				467D39EC1BED917E00DA7BE0 /* DesignableTextView.swift in Sources */,
+				467D39E81BED917E00DA7BE0 /* DesignableImageView.swift in Sources */,
+				467D39F61BED917E00DA7BE0 /* SpringButton.swift in Sources */,
+				4631BE861BB2264500CE6FAA /* LoginViewController.swift in Sources */,
+				46FAF66F1BFD536B004D573A /* MessageInfo.swift in Sources */,
+				467D39F81BED917E00DA7BE0 /* SpringLabel.swift in Sources */,
+				467D39C61BE7F79400DA7BE0 /* ProfileImageCollectionViewController.swift in Sources */,
+				467D39FD1BED917E00DA7BE0 /* TransitionZoom.swift in Sources */,
+				467D39F01BED917E00DA7BE0 /* KeyboardAvoidingScrollView.swift in Sources */,
+				467D39F71BED917E00DA7BE0 /* SpringImageView.swift in Sources */,
+				467D39C81BE7F9D600DA7BE0 /* ProfileImageCell.swift in Sources */,
+				467D39F91BED917E00DA7BE0 /* SpringTextField.swift in Sources */,
+				4631BE441BB21FBE00CE6FAA /* HomeViewController.swift in Sources */,
+				467D39F31BED917E00DA7BE0 /* Misc.swift in Sources */,
+				467D39ED1BED917E00DA7BE0 /* DesignableView.swift in Sources */,
+				467D39E51BED917E00DA7BE0 /* BlurView.swift in Sources */,
+				467D39EA1BED917E00DA7BE0 /* DesignableTabBarController.swift in Sources */,
+				46FAF6671BFA9AAC004D573A /* RenterCodeViewController.swift in Sources */,
 				4631BE3F1BB21FBE00CE6FAA /* AppDelegate.swift in Sources */,
+				467D39F51BED917E00DA7BE0 /* SpringAnimation.swift in Sources */,
+				46FAF66B1BFD48EF004D573A /* MessageTableViewCell.swift in Sources */,
+				4631BE8A1BB226CC00CE6FAA /* ResetPasswordViewController.swift in Sources */,
+				467D39FC1BED917E00DA7BE0 /* TransitionManager.swift in Sources */,
+				467D39E61BED917E00DA7BE0 /* Data.swift in Sources */,
+				467D39EE1BED917E00DA7BE0 /* ImageLoader.swift in Sources */,
+				467D39E71BED917E00DA7BE0 /* DesignableButton.swift in Sources */,
+				467D39FE1BED917E00DA7BE0 /* UnwindSegue.swift in Sources */,
 				4631BE421BB21FBE00CE6FAA /* Apkalu.xcdatamodeld in Sources */,
+				467D39FB1BED917E00DA7BE0 /* SpringView.swift in Sources */,
+				4631BE881BB2268700CE6FAA /* SignUpViewController.swift in Sources */,
+				4631BE8C1BB227DB00CE6FAA /* AddAddressViewController.swift in Sources */,
+				467D39FA1BED917E00DA7BE0 /* SpringTextView.swift in Sources */,
+				467D39E91BED917E00DA7BE0 /* DesignableLabel.swift in Sources */,
+				4623D1E71BD1A6EE00D8B85D /* SettingsViewController.swift in Sources */,
+				467D39F11BED917E00DA7BE0 /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,9 +573,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Apkalu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Apkalu/Apkalu-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -354,9 +590,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Apkalu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Apkalu/Apkalu-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -413,6 +655,7 @@
 				4631BE5D1BB21FBE00CE6FAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4631BE5E1BB21FBE00CE6FAA /* Build configuration list for PBXNativeTarget "ApkaluTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +664,7 @@
 				4631BE601BB21FBE00CE6FAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
