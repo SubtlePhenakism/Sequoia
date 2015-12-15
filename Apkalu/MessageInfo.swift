@@ -14,6 +14,7 @@ import Bolts
 class MessageInfo: PFObject, PFSubclassing {
     @NSManaged var image: PFFile
     @NSManaged var sender: PFUser
+    @NSManaged var receiver: PFUser
     @NSManaged var message: String?
     
     //1
@@ -31,15 +32,23 @@ class MessageInfo: PFObject, PFSubclassing {
     
     override class func query() -> PFQuery? {
         //1
-        let query = PFQuery(className: MessageInfo.parseClassName())
-        //2
-        query.includeKey("sender")
-        
-        query.whereKey("receiver", equalTo: PFUser.currentUser()!)
+//        let query = PFQuery(className: MessageInfo.parseClassName())
+//        //2
+//        query.includeKey("sender")
+//        
+//        query.whereKey("receiver", equalTo: PFUser.currentUser()!)
         //3
+        var messageQuery : PFQuery!
+        var senderQuery = PFQuery(className: MessageInfo.parseClassName())
+        senderQuery.includeKey("receiver")
+        senderQuery.whereKey("sender", equalTo: PFUser.currentUser()!)
+        var receiverQuery = PFQuery(className: MessageInfo.parseClassName())
+        receiverQuery.includeKey("sender")
+        receiverQuery.whereKey("receiver", equalTo: PFUser.currentUser()!)
+        messageQuery = PFQuery.orQueryWithSubqueries([senderQuery, receiverQuery])
         
         
-        return query
+        return messageQuery
     }
     
     init(image: PFFile, sender: PFUser, message:String) {

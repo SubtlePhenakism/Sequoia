@@ -62,6 +62,10 @@
 		467D39FC1BED917E00DA7BE0 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467D39E21BED917E00DA7BE0 /* TransitionManager.swift */; };
 		467D39FD1BED917E00DA7BE0 /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467D39E31BED917E00DA7BE0 /* TransitionZoom.swift */; };
 		467D39FE1BED917E00DA7BE0 /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467D39E41BED917E00DA7BE0 /* UnwindSegue.swift */; };
+		46A29D291C1387CB00C99B78 /* MessageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A29D281C1387CB00C99B78 /* MessageDetailViewController.swift */; };
+		46A29D2B1C164CC300C99B78 /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A29D2A1C164CC300C99B78 /* LocalStore.swift */; };
+		46A29D2D1C1778FD00C99B78 /* NeighborhoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A29D2C1C1778FD00C99B78 /* NeighborhoodViewController.swift */; };
+		46A29D2F1C18E1B600C99B78 /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A29D2E1C18E1B600C99B78 /* RequestViewController.swift */; };
 		46EF68371BD4143D00AA52DF /* HomeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EF68361BD4143D00AA52DF /* HomeInfo.swift */; };
 		46FAF6671BFA9AAC004D573A /* RenterCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FAF6661BFA9AAC004D573A /* RenterCodeViewController.swift */; };
 		46FAF66B1BFD48EF004D573A /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FAF66A1BFD48EF004D573A /* MessageTableViewCell.swift */; };
@@ -140,6 +144,10 @@
 		467D39E21BED917E00DA7BE0 /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
 		467D39E31BED917E00DA7BE0 /* TransitionZoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionZoom.swift; sourceTree = "<group>"; };
 		467D39E41BED917E00DA7BE0 /* UnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
+		46A29D281C1387CB00C99B78 /* MessageDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageDetailViewController.swift; sourceTree = "<group>"; };
+		46A29D2A1C164CC300C99B78 /* LocalStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStore.swift; sourceTree = "<group>"; };
+		46A29D2C1C1778FD00C99B78 /* NeighborhoodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeighborhoodViewController.swift; sourceTree = "<group>"; };
+		46A29D2E1C18E1B600C99B78 /* RequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
 		46EF68361BD4143D00AA52DF /* HomeInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInfo.swift; sourceTree = "<group>"; };
 		46FAF6661BFA9AAC004D573A /* RenterCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenterCodeViewController.swift; sourceTree = "<group>"; };
 		46FAF66A1BFD48EF004D573A /* MessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
@@ -203,8 +211,12 @@
 			children = (
 				467D39C91BED917E00DA7BE0 /* Spring */,
 				4631BE3E1BB21FBE00CE6FAA /* AppDelegate.swift */,
+				46A29D2A1C164CC300C99B78 /* LocalStore.swift */,
 				4631BE431BB21FBE00CE6FAA /* HomeViewController.swift */,
+				46A29D2C1C1778FD00C99B78 /* NeighborhoodViewController.swift */,
+				46A29D2E1C18E1B600C99B78 /* RequestViewController.swift */,
 				46FAF66A1BFD48EF004D573A /* MessageTableViewCell.swift */,
+				46A29D281C1387CB00C99B78 /* MessageDetailViewController.swift */,
 				46EF68361BD4143D00AA52DF /* HomeInfo.swift */,
 				46FAF66E1BFD536B004D573A /* MessageInfo.swift */,
 				4623D1E61BD1A6EE00D8B85D /* SettingsViewController.swift */,
@@ -409,9 +421,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46A29D2D1C1778FD00C99B78 /* NeighborhoodViewController.swift in Sources */,
 				46EF68371BD4143D00AA52DF /* HomeInfo.swift in Sources */,
+				46A29D2F1C18E1B600C99B78 /* RequestViewController.swift in Sources */,
 				467D39F41BED917E00DA7BE0 /* Spring.swift in Sources */,
 				467D39EB1BED917E00DA7BE0 /* DesignableTextField.swift in Sources */,
+				46A29D2B1C164CC300C99B78 /* LocalStore.swift in Sources */,
 				467D39EC1BED917E00DA7BE0 /* DesignableTextView.swift in Sources */,
 				467D39E81BED917E00DA7BE0 /* DesignableImageView.swift in Sources */,
 				467D39F61BED917E00DA7BE0 /* SpringButton.swift in Sources */,
@@ -423,6 +438,7 @@
 				467D39F01BED917E00DA7BE0 /* KeyboardAvoidingScrollView.swift in Sources */,
 				467D39F71BED917E00DA7BE0 /* SpringImageView.swift in Sources */,
 				467D39C81BE7F9D600DA7BE0 /* ProfileImageCell.swift in Sources */,
+				46A29D291C1387CB00C99B78 /* MessageDetailViewController.swift in Sources */,
 				467D39F91BED917E00DA7BE0 /* SpringTextField.swift in Sources */,
 				4631BE441BB21FBE00CE6FAA /* HomeViewController.swift in Sources */,
 				467D39F31BED917E00DA7BE0 /* Misc.swift in Sources */,

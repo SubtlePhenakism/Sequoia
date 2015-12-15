@@ -19,6 +19,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     //var leMessages : NSArray = []
     var noteObjects: NSMutableArray = NSMutableArray()
     
+    //var currentUser : PFUser?
+    
     @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var propertyTitle: UILabel!
     @IBOutlet weak var propertyAddress: UILabel!
@@ -27,10 +29,25 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var propertyZip: UILabel!
     @IBOutlet weak var propertyImage: PFImageView!
     @IBOutlet weak var userProfileImage: PFImageView!
+    @IBOutlet weak var usernameLabel: UIBarButtonItem!
     
     @IBOutlet weak var tableView: UITableView!
     
     @IBOutlet weak var messageCount: UILabel!
+    
+    @IBAction func utilitiesButton(sender: AnyObject) {
+        var alert = UIAlertView(title: "Remodeling Utilities", message: "Check back soon for updates", delegate: self, cancelButtonTitle: "OK")
+        alert.show()
+    }
+    @IBAction func infoButton(sender: AnyObject) {
+        var alert = UIAlertView(title: "Remodeling Info", message: "Check back soon for updates", delegate: self, cancelButtonTitle: "OK")
+        alert.show()
+    }
+    
+    
+    @IBAction func backToHome(segue:UIStoryboardSegue) {
+        
+    }
     
     override func viewDidAppear(animated: Bool) {
         if let pUserImage = PFUser.currentUser()?["image"] as? PFFile {
@@ -51,7 +68,24 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func fetchAllMessagesFromLocalDatastore() {
         
-        var messageQuery = MessageInfo.query()
+        var messageQuery: PFQuery!
+        //var currentUser = PFUser.currentUser()
+        if PFUser.currentUser() != nil {
+            var senderQuery = PFQuery(className: "Message")
+            //senderQuery.includeKey("receiver")
+            senderQuery.whereKey("sender", equalTo: PFUser.currentUser()!)
+            var receiverQuery = PFQuery(className: "Message")
+            //receiverQuery.includeKey("sender")
+            receiverQuery.whereKey("receiver", equalTo: PFUser.currentUser()!)
+            //messageQuery.includeKey("sender")
+            //messageQuery.includeKey("receiver")
+            messageQuery = PFQuery.orQueryWithSubqueries([senderQuery, receiverQuery])
+            messageQuery.includeKey("sender")
+            messageQuery.includeKey("receiver")
+        } else {
+            println("no current object")
+        }
+        messageQuery.orderByDescending("createdAt")
         
         messageQuery?.fromLocalDatastore()
         
@@ -74,7 +108,24 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         PFObject.unpinAllInBackground(nil)
         
-        let messageInfo = MessageInfo.query()
+        var messageInfo: PFQuery!
+        //var currentUser = PFUser.currentUser()
+        if PFUser.currentUser() != nil {
+            var senderQuery = PFQuery(className: "Message")
+            //senderQuery.includeKey("receiver")
+            senderQuery.whereKey("sender", equalTo: PFUser.currentUser()!)
+            var receiverQuery = PFQuery(className: "Message")
+            //receiverQuery.includeKey("sender")
+            receiverQuery.whereKey("receiver", equalTo: PFUser.currentUser()!)
+            //messageInfo.includeKey("sender")
+            //messageInfo.includeKey("receiver")
+            messageInfo = PFQuery.orQueryWithSubqueries([senderQuery, receiverQuery])
+            messageInfo.includeKey("sender")
+            messageInfo.includeKey("receiver")
+        } else {
+            println("no current object")
+        }
+        
         messageInfo?.findObjectsInBackgroundWithBlock({ (objects, error) -> Void in
             
             if (error == nil) {
@@ -99,7 +150,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         // Show the current visitor's username
         if let pUserName = PFUser.currentUser()?["username"] as? String {
-            self.userNameLabel?.text = pUserName
+            self.usernameLabel.title = pUserName
         }
         
 //        let messageData = MessageInfo.query()
@@ -307,7 +358,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.messageText?.text = object["message"] as? String
         
         if let sender = object["sender"] as? PFUser {
-            cell.senderName.text = sender.username
+            println(sender)
+            if let username = sender["username"] as? String {
+                cell.senderName.text = username
+            }
+            //cell.senderName.text = sender.username
             if let senderImage = sender["image"] as? PFFile {
                 cell.senderImage.file = senderImage
                 cell.senderImage.loadInBackground()
@@ -390,6 +445,21 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                 self.presentViewController(viewController, animated: true, completion: nil)
             })
         }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using [segue destinationViewController].
+        if (segue.identifier! == "HomeToMessageDetailView") {
+            let detailScene = segue.destinationViewController as! MessageDetailViewController
+            // Pass the selected object to the destination view controller.
+            if let indexPath = self.tableView.indexPathForSelectedRow() {
+                let row = Int(indexPath.row)
+                detailScene.currentObject = noteObjects[row] as? PFObject
+            }
+        }
+//        else if (segue.identifier == "menuSegue") {
+//            let menuScene = segue.destinationViewController as! MenuViewController
+//        }
     }
 }
 
